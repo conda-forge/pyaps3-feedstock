@@ -1,7 +1,7 @@
 About pyaps3
 ============
 
-Home: https://github.com/yunjunz/PyAPS
+Home: https://github.com/insarlab/PyAPS
 
 Package license: GPL-3.0-or-later
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyaps3-feedstoc
 
 Summary: Python based Atmospheric Phase Screen estimation
 
-Development: https://github.com/yunjunz/PyAPS
+Development: https://github.com/insarlab/PyAPS
 
 This python 3 module estimates differential phase delay maps due to the
 stratified atmosphere for correcting radar interferograms. It is rewritten
@@ -63,7 +63,8 @@ conda search pyaps3 --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
