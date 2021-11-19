@@ -1,16 +1,16 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: pyaps3
   version: {{ version }}
 
 source:
-  url: https://github.com/yunjunz/PyAPS/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4bca238c01c5c37492edf61185f82597abf63d7a19f35429720ab915b2dc5360
+  url: https://github.com/insarlab/PyAPS/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: c4f8212e40a87114ebcafd77336761422e667f7df7d6f2f01c0c9ed7fd350466
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -20,9 +20,7 @@ requirements:
   run:
     - python >=3.6
     - cdsapi
-    - ecCodes
     - matplotlib-base
-    - netcdf4
     - numpy
     - pygrib
     - scipy
@@ -32,7 +30,7 @@ test:
     - pyaps3
 
 about:
-  home: https://github.com/yunjunz/PyAPS
+  home: https://github.com/insarlab/PyAPS
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
@@ -42,7 +40,7 @@ about:
     stratified atmosphere for correcting radar interferograms. It is rewritten
     in Python 3 language from PYAPS source code and adapted for ECMWF's
     ERA-5 corrections.
-  dev_url: https://github.com/yunjunz/PyAPS
+  dev_url: https://github.com/insarlab/PyAPS
 
 extra:
   recipe-maintainers:
