@@ -10,15 +10,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
+    - setuptools
+    - setuptools_scm
+    - wheel
   run:
-    - python >=3.6
+    - python >=3.8
     - cdsapi
     - matplotlib-base
     - numpy
