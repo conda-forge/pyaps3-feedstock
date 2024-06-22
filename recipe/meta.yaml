@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: pyaps3
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/insarlab/PyAPS/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 81dd2c911979bd3dc2243c47247e49f0b0c8fcf54344548b1734f97ad7f5fa4a
+  sha256: 7e857bb296c873181abaebcf478fbceab6ae90738fe018e161545344488b77f9
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - {{ PYTHON }} -m pip install . -vv
