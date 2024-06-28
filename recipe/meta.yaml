@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: pyaps3
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/insarlab/PyAPS/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7e857bb296c873181abaebcf478fbceab6ae90738fe018e161545344488b77f9
+  sha256: eac5e8b779ee17250a599d2c5d729b05486507f0baab74781dd62f487bc05cca
 
 build:
   noarch: python
