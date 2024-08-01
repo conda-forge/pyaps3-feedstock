@@ -1,19 +1,18 @@
+{% set name = "pyaps3" %}
 {% set version = "0.3.4" %}
 
 package:
-  name: pyaps3
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/insarlab/PyAPS/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: eac5e8b779ee17250a599d2c5d729b05486507f0baab74781dd62f487bc05cca
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d111b89d23b1d654edae0e63db09cb3934dbce7beed8f027b91942cbd88d04b0
 
 build:
   noarch: python
-  number: 0
-  script:
-    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-    - {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,9 +39,9 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: Python based Atmospheric Phase Screen estimation
+  summary: Python-based Atmospheric Phase Screen estimation
   description: |
-    This python 3 module estimates differential phase delay maps due to the
+    This Python 3 module estimates differential phase delay maps due to the
     stratified atmosphere for correcting radar interferograms. It is rewritten
     in Python 3 language from PYAPS source code and adapted for ECMWF's
     ERA-5 corrections.
