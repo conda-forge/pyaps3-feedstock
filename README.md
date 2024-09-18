@@ -7,11 +7,11 @@ Home: https://github.com/insarlab/PyAPS
 
 Package license: GPL-3.0-or-later
 
-Summary: Python based Atmospheric Phase Screen estimation
+Summary: Python-based Atmospheric Phase Screen estimation
 
 Development: https://github.com/insarlab/PyAPS
 
-This python 3 module estimates differential phase delay maps due to the
+This Python 3 module estimates differential phase delay maps due to the
 stratified atmosphere for correcting radar interferograms. It is rewritten
 in Python 3 language from PYAPS source code and adapted for ECMWF's
 ERA-5 corrections.
