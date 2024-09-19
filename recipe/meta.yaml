@@ -1,5 +1,5 @@
 {% set name = "pyaps3" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d111b89d23b1d654edae0e63db09cb3934dbce7beed8f027b91942cbd88d04b0
+  sha256: 201fc0ca8c60de68015c031da179040c3709a8d3540f14ae453baba170aca82e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,8 +23,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - cdsapi
-    - matplotlib-base
+    - cdsapi >=0.7.0
     - numpy
     - pygrib
     - scipy
@@ -43,7 +42,7 @@ about:
   description: |
     This Python 3 module estimates differential phase delay maps due to the
     stratified atmosphere for correcting radar interferograms. It is rewritten
-    in Python 3 language from PYAPS source code and adapted for ECMWF's
+    in Python 3 language from PyAPS source code and adapted for ECMWF's
     ERA-5 corrections.
   dev_url: https://github.com/insarlab/PyAPS
 
