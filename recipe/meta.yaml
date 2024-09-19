@@ -23,8 +23,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - cdsapi
-    - matplotlib-base
+    - cdsapi >=0.7.0
     - numpy
     - pygrib
     - scipy
@@ -43,7 +42,7 @@ about:
   description: |
     This Python 3 module estimates differential phase delay maps due to the
     stratified atmosphere for correcting radar interferograms. It is rewritten
-    in Python 3 language from PYAPS source code and adapted for ECMWF's
+    in Python 3 language from PyAPS source code and adapted for ECMWF's
     ERA-5 corrections.
   dev_url: https://github.com/insarlab/PyAPS
 
