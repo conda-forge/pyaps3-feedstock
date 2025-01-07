@@ -13,7 +13,7 @@ Development: https://github.com/insarlab/PyAPS
 
 This Python 3 module estimates differential phase delay maps due to the
 stratified atmosphere for correcting radar interferograms. It is rewritten
-in Python 3 language from PYAPS source code and adapted for ECMWF's
+in Python 3 language from PyAPS source code and adapted for ECMWF's
 ERA-5 corrections.
 
 
