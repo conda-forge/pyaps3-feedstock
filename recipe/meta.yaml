@@ -1,5 +1,5 @@
 {% set name = "pyaps3" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 201fc0ca8c60de68015c031da179040c3709a8d3540f14ae453baba170aca82e
+  sha256: bf64eb4af7026102483e03112a128542e30f31120ebfa989e637d1ac0fd276db
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - wheel
   run:
     - python >={{ python_min }}
-    - cdsapi >=0.7.0
+    - cdsapi >=0.7.2
     - numpy
     - pygrib
     - scipy
