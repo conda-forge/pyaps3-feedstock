@@ -1,5 +1,5 @@
 {% set name = "pyaps3" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf64eb4af7026102483e03112a128542e30f31120ebfa989e637d1ac0fd276db
+  sha256: 6ba4fe15525d1eeabf4fe139edc03a36a0debe4510b048f28df24a6ac1dad442
 
 build:
   noarch: python
